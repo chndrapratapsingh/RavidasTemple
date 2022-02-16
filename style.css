@@ -189,7 +189,7 @@ header ul li a:hover{
     color: #918dc0;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     #about{
         display: flex;
         flex-direction: column;
@@ -209,18 +209,24 @@ header ul li a:hover{
     header ul li a{
         font-size: 2rem;
         margin-left: 5rem;
+        font-size: 1.2rem;
     }
 
     header #icon h2{
-        font-size: 3.7rem;
+        font-size: 2.2remrem;
     }
-
     header #icon img{
-        height: 9rem;
-        width: 9rem;
+        height: 4srem;
+        width: 4rem;
     }
 
     #about img{
         width: 17rem;
+    }
+
+    #language{
+        display: flex;
+        /* flex-direction: column; */
+        font-size: 0rem;
     }
 }
