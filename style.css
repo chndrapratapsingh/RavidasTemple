@@ -189,6 +189,12 @@ header ul li a:hover{
     color: #918dc0;
 }
 
+header ul details{
+    color: #918dc0;
+    margin-top: 0.3rem;
+    margin-left: 1rem ;
+}
+
 @media only screen and (max-width: 800px) {
     #about{
         display: flex;
@@ -208,8 +214,15 @@ header ul li a:hover{
 
     header ul li a{
         font-size: 2rem;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
         font-size: 1.2rem;
+    }
+
+    header ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     header #icon h2{
@@ -228,5 +241,10 @@ header ul li a:hover{
         display: flex;
         /* flex-direction: column; */
         font-size: 0rem;
+    }
+
+    header ul details{
+        color: #918dc0;
+        margin-top: 0.2rem;
     }
 }
