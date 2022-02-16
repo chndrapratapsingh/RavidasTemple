@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="content.css">
+</head>
+<body>
+    <header>
+        <div id="icon">
+            <!-- <img src="icon.jpg" alt="Logo"> -->
+            <h2>CONTACT FOR ME</h2>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="content.html">Contact</a></li>
+            <div id="language">
+                <input onclick="hindia()" type="radio" name="language" id="hindi">Hindi
+                <input onclick="englisha()" type="radio" name="language" id="english">English
+            </div>
+        </ul>
+    </header> 
+    <!--<script type="text/javascript">
+        var a;
+        Input{(a);}
+        document.write(a+15);
+    </script>-->
+    <div id="maincontent">
+        <form 
+        action="https://yourquerys.herokuapp.com/api/send/11783b0c-3dce-4e0a-abc5-b7c80b1b7e0a"
+        method="post">
+        <div id="contact">
+            <input id="userName" type="text" name="name" placeholder="Enter Your Name">
+            <input id="email" type="email" name="email" placeholder="Enter Your Email">
+            <input id="phone" type="query" name="query" placeholder="Enter Your Phone Number">
+            <!--<input id="text" type="text" name="name" placeholder="Enter Your Name">-->
+            <!--<input id="query" type="tel" name="query" placeholder="Enter Your Phone Number">-->
+            <button id ="button1"type="submit">Submit</button>
+        </div>
+    </form>
+        <!--<div id="cards">
+                <div class="card">             phone
+                    <h2>--PHONE--</h2>
+                </div>
+                <div class="card">             facebook
+                    <h2>--FACEBOOK--</h2>
+                </div>
+                <div class="card">             youtube
+                    <h2>--YOUTUBE--</h2>
+                </div>
+                <div class="card">             instagram
+                    <h2>--INSTAGRAM--</h2>
+                </div>
+            </div>-->
+    </div>
+    <footer>
+        <h2>Copyright © CHANDRAPRATAP | All rights reserved</h2>
+        <div id="icons">
+            <a href="https://www.facebook.com/profile.php?id=100052978354446"><img src="facebook.svg" alt="facebook" height="30px"></a>
+            <a href="https://www.instagram.com/chandrapratap789/?hl=en"><img src="instagram.svg" alt="instagram" height="30px"></a>
+            <a href="https://www.youtube.com/channel/UCRrgM8g7QkC-K5cqobf7ekg?view_as=subscriber"><img src="youtube.svg" alt="youtube" height="30px"></a>
+        </div>
+    </footer>
+</body>
+</html>

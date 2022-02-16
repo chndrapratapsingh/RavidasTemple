@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shizuru&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+header{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.8rem;
+    box-shadow: 0px -1px 9px 0 #00000066;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon img{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid orange;
+}
+
+#icon h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1rem;
+    color: #918dc0;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header ul li a{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #918dc0;
+    padding-left: 0.8rem;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    border: 1px solid #918dc0;
+    padding-right: 0.8rem;
+    border-radius: 2rem;
+    background-color: #918dc0;
+    margin: 1rem;
+    color: white;
+    transition: 0.5s;
+}
+
+/* language */
+
+#language{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #918dc0;
+}
+
+#language #english{
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+#language #hindi{
+    margin-right: 0.3rem;
+}
+
+#landing_page{
+    /* background-image: url('/13d.png');
+    background-attachment: fixed;
+    background-size: 85rem;
+    background-repeat: no-repeat; */
+    height: 90vh;
+    /* background-position: center; */
+    display: flex;
+    flex-direction: row;
+}
+
+#landing_page img{
+    height: 90vh;
+    width: 0;
+    transition: 1s;
+}
+
+#main{
+    height: 100vh;
+}
+
+#photo3d{
+    height: 88.3vh;
+    width: 100%;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    /* height: 15rem; */
+    /* width: 12rem; */
+    box-shadow: 1px 2px 9px 0px #0000003d;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card details summary{
+    cursor: pointer;
+}
+
+.card details p{
+    cursor: default;
+}
+
+/* About Page */
+
+#about{
+    padding: 1rem;
+    border: 2px solid orange;
+    margin: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-gap: 1rem;
+}
+
+#about_p{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#about img{
+    border: 6px solid orange;
+    border-radius: 1rem;
+}
+
+#about_p button{
+    border: 1px solid orange;
+    padding: 0 1rem;
+    height: 2.4rem;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    color: orange;
+    background: none;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+
+#about_p button:hover{
+    background: orange;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+
+#about_p p{
+    font-size: 1.3rem;
+    color: #918dc0;
+}
+
+.card details summary{
+    color:#918dc0;
+}
+
+.card details p{
+    color: #918dc0;
+}
+
+@media only screen and (max-width: 800px) {
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+    #cards{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header #icon{
+        width: -webkit-fill-available;
+    }
+
+    header ul li a{
+        font-size: 2rem;
+        margin-left: 5rem;
+    }
+
+    header #icon h2{
+        font-size: 3.7rem;
+    }
+
+    header #icon img{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    #about img{
+        width: 17rem;
+    }
+}
