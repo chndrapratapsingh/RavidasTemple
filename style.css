@@ -189,7 +189,7 @@ header ul li a:hover{
     color: #918dc0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
     #about{
         display: flex;
         flex-direction: column;
